@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script defer src="test-file.js"></script>
+	</head>
+
+	<body>
+		<div class="d-flex justify-content-center align-self-center" style="margin-top: 115px">
+			<form method="POST" accept-charset="utf-8" enctype="multipart/form-data">
+				<div class="formgroup container-fluid">
+					<input type="file" name="pdf_file" accept=".pdf" />
+					<input type="hidden" name="MAX_FILE_SIZE" value="67108864" />
+				</div>
+				<div class="formgroup container-fluid">
+					<label for="submit">Submit To Database</label><br />
+					<input type="submit" name="submit" />
+				</div>
+			</form>
+		</div>
+        <div class="pdf-list"></div>
+	</body>
+</html>
